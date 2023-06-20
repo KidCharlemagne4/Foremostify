@@ -1,0 +1,17 @@
+{
+	"description": "Pimps out you DNN admin area.",
+	"manifest_version": 2,
+	"name": "foremostify",
+	"version": "1.0",
+	"homepage_url": "https://williamcoughlin.dev",
+	"icons": {
+		"48": "icons/border-48.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*.com/*", "*://*.local/*", "*://*.org/*", "*://*.net/*"],
+			"js": ["foremostify.js"]
+		}
+	]
+}
