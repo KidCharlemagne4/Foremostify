@@ -1,11 +1,16 @@
+:root {
+    --primary: #e45025;
+    --bg: #212121;
+  }
+
 .recycleBinContainer ul.tabs-nav,
 .personabar .personabarLogo,
 .dnn-tabs.react-tabs.secondary>ul {
-    border-bottom: 1px solid #e45025;
+    border-bottom: 1px solid var(--primary);
 }
 
 .personabarnav>li#Edit {
-    border-top: 1px solid #e45025;
+    border-top: 1px solid var(--primary);
 }
 
 .recycleBinContainer ul.tabs-nav li,
@@ -16,11 +21,11 @@
 .theme-file-container span.thumbnail.empty::before,
 .customCssPanel,
 button.dnn-ui-common-button {
-    border: 1px solid #e45025;
+    border: 1px solid var(--primary);
 }
 
 .recycleBinContainer {
-    border: 2px solid #e45025;
+    border: 2px solid var(--primary);
 }
 
 .socialpanelheader .personaBar-input,
@@ -43,11 +48,11 @@ select,
 #recycleBin-body *,
 .theme-file-container.selected.site span.thumbnail,
 .dnn-switch-container .dnn-switch.dnn-switch-active {
-    border-color: #e45025;
+    border-color: var(--primary);
 }
 
 .rm-container #Assets-panel .rm-circular {
-    border-color: #212121;
+    border-color: var(--bg);
 }
 
 .dnn-package-upload,
@@ -57,17 +62,17 @@ select,
 
 .dnn-tabs.react-tabs.secondary>ul li[aria-selected="true"],
 .dnn-tabs.react-tabs.primary>ul li[aria-selected="true"] {
-    border-bottom: 3px solid #e45025;
+    border-bottom: 3px solid var(--primary);
 }
 
 ._36pPZOClZvplu5c9R63F_Y.selected span.card-image.site-default {
-    border: 4px solid #e45025;
+    border: 4px solid var(--primary);
 }
 
 svg>g>*,
 svg>path,
 .dnn-persona-bar-treeview .selection-arrow>div svg {
-    fill: #e45025 !important;
+    fill: var(--primary) !important;
 }
 
 .personabarnav>li>span.icon-loader svg .back {
@@ -99,7 +104,7 @@ select,
 button.dnn-ui-common-button,
 .dnn-persona-bar-page-body,
 .dnn-persona-bar-page.show {
-    background: #212121;
+    background: var(--bg);
 }
 
 .dnn-single-line-input-with-error .input-tooltip-container .dnn-ui-common-single-line-input,
@@ -137,7 +142,7 @@ select,
 }
 
 .dnn-radio-buttons ul li input[type="radio"]:checked~.check {
-    box-shadow: inset 0 0 1px 1px #e45025, inset 0 0 0 3px #fff;
+    box-shadow: inset 0 0 1px 1px var(--primary), inset 0 0 0 3px #fff;
 }
 
 button.dnn-ui-common-button[role="primary"]:disabled {
@@ -158,7 +163,7 @@ button.dnn-ui-common-button[role="primary"]:disabled {
 }
 
 .hoverSummaryMenu ul li.border {
-    border-left: 1px solid #e45025;
+    border-left: 1px solid var(--primary);
 }
 
 .recycleBinContainer ul.tabs-nav li.ui-tabs-active a,
@@ -178,11 +183,11 @@ button.dnn-ui-common-button,
 .dnn-persona-bar-page-header,
 .hoverSummaryMenu ul li label,
 .dropZoneInactive:hover {
-    color: #e45025;
+    color: var(--primary);
 }
 
 .dnn-tabs.react-tabs.secondary>ul li[aria-selected="true"] {
-    color: #e45025 !important;
+    color: var(--primary) !important;
 }
 
 .rm-container #Assets-panel .rm-circular.rm-folder,
@@ -193,7 +198,7 @@ button.dnn-ui-common-button,
 a.primarybtn,
 #personaBar-loadingbar>div,
 button.dnn-ui-common-button[role="primary"] {
-    background: #e45025;
+    background: var(--primary);
 }
 
 .recycleBinContainer table.dnnRBGrid tr.dnnRBGridHeader td {
@@ -264,7 +269,7 @@ button.dnn-ui-common-button[role="primary"] {
 }
 
 .recycleBinContainer .EmptyList {
-    background-color: #e45025 !important;
+    background-color: var(--primary) !important;
 }
 
 /*******************************************************************************************/
