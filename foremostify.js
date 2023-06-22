@@ -5,10 +5,7 @@ setTimeout(function () {
     addElement();
     //doc.documentElement.style.setProperty("--primary", "fuchsia");
     console.log(".personaBar-iframe.contentDocument", doc);
-    //myFunction();
     doc.getElementById("Edit").addEventListener("click", myFunction);
-
-
 }, 200);
 
 function addElement() {
@@ -21,9 +18,15 @@ function addElement() {
         newDiv.appendChild(newContent);
         const currentDiv = doc.getElementById("Edit");
         doc.body.insertBefore(newDiv, currentDiv);
-        doc.body.innerHTML = doc.body.innerHTML + '<style> #fmify-settings {position:absolute;top:84vh;z-index:99999;border-bottom:1px solid #e45025;color:#e45025;padding:2px;left:15%} #fmify-settings:hover {cursor: pointer;}</style>';
-        console.log("func end", newDiv);
-}, 200);
+        doc.body.innerHTML = doc.body.innerHTML + '<style> #fmify-settings {position:absolute;top:84vh;z-index:99999;border-bottom:1px solid var(--primary);color:var(--primary);padding:2px;left:14px} #fmify-settings:hover {cursor: pointer;}</style>';
+        const colors = ["#eeee44", "#44ee44", "#2e69ff", "#c951ff", "#ff2222", "#e45025"];
+        var i = 0;
+        doc.getElementById("fmify-settings").addEventListener("click", function(){
+            if (i == colors.length) { i=0;}
+            doc.documentElement.style.setProperty("--primary", colors[i]);
+            i++;
+        });
+    }, 200);
   }
 
   function myFunction() {
@@ -34,5 +37,5 @@ function addElement() {
         let editdoc = editBar.contentDocument;
         editdoc.body.innerHTML = editdoc.body.innerHTML + '<style>.editbar{background: #202020;}</style>';
         console.log(".editBar-iframe.contentDocument", editdoc);
-    }, 800);
+    }, 200);
 }
