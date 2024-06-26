@@ -1,5 +1,5 @@
-# Formostify
-firefox extension to pimp out DNN
+# Foremostify
+depricated version
 
 1) go to about:debugging#/runtime/this-firefox
 2) click "load temporary add-on..."
